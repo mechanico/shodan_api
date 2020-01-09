@@ -15,16 +15,16 @@ Options:
 
 * -h : Show help 
 * -s : Your search query e.g. 'tornadoserver title:home'
-* -f : Your output file e.g. output.txt
+* -o : Your output file e.g. output.txt
 
 ~~~
 $ python shodanSearch.py -h
-usage: shodanSearch.py [-h] [-s SEARCH] [-f FILE]
+usage: shodanSearch.py [-h] [-s SEARCH] [-o FILE]
 
 optional arguments:
   -h, --help            show this help message and exit
   -s, --search          search query
-  -f, --file            output filename
+  -o, --output            output filename
 ~~~
 
 The default output format of the results will be:
@@ -42,7 +42,7 @@ result_file.write(item['ip_str'] + ':' + str(item['port']) + '\n') # Configure y
 # Example
 
 ~~~
-$ python shodanSearch.py -s 'tornadoserver title:home' -f vulnerable_jupyters.txt
+$ python shodanSearch.py -s 'tornadoserver title:home' -o vulnerable_jupyters.txt
 [+] Input: Enter your shodan.io API key: --YOUR_SECRET_API_KEY--
 [+] Info: Total 494 results.
 [+] Input: Do you want to perform the query? This will cost you 5 shodan Query Credits [Y/N]: y
