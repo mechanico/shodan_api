@@ -5,7 +5,7 @@
 You will first need to install the shodan library by running:
 
 ~~~
-$ sudo pip install shodan
+$ sudo pip3 install shodan
 ~~~
 
 You will also need a valid shodan.io account. Get your shodan.io API key from https://account.shodan.io
